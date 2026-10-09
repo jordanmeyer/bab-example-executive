@@ -12,7 +12,7 @@ The COO of a fictional 12-store coffee chain needs to see contribution pressure 
 - [x] (2026-10-09) Obtain and record simulated student agreement, expected example and metric exclusions.
 - [x] (2026-10-09) Prepare pinned managed build, source model, 72-row data and complete dashboard interaction.
 - [x] (2026-10-09) Run exploratory build and 13 passing browser cases; fix inaccurate board caption.
-- [ ] Commit intended source, reinstall, rebuild and evaluate clean checkpoint.
+- [x] (2026-10-09) Commit intended source, reinstall, rebuild and evaluate clean checkpoint bc19eb40ba4ded2b141c13955cdea79e0bf406c4; 13/13 browser checks pass and both modal focus paths verified.
 - [ ] Complete independent review/revision loop; hand source to coordinator for publication.
 
 ## Surprises & Discoveries
@@ -25,7 +25,7 @@ The simulated student chose distinct contribution margin and comparable-growth i
 
 ## Outcomes & Retrospective
 
-Core implementation exists and exploratory model tests pass. Independent review, final checkpoint evidence and publication are still outstanding. The coordinator owns publication; this developer must not push or edit course files.
+Core implementation and developer final evaluation are complete at bc19eb40ba4ded2b141c13955cdea79e0bf406c4. Independent review and publication are still outstanding. The coordinator owns publication; this developer must not push or edit course files.
 
 ## Context and Orientation
 
@@ -56,3 +56,5 @@ Independent inputs and derivations are in PLAN.md; exact simulated exchange is i
 `selectRows(rows, {region, storeId, month})` returns the intersection of the selected dimensions; sentinel values mean all. `summarize(rows)` returns summed accounting values, contribution and weighted ratios with null for zero denominators. `status(row, target)` compares unrounded margin with a fraction target. `costBridge(current, previous)` returns expense dollar and rate changes. Mantine, ECharts and Tabulator use approved exact versions and local theme adapters; no runtime services or further packages are allowed.
 
 Revision note: initialized after the complete first implementation; records observed preliminary checks and keeps final review pending.
+
+Revision note: final developer evidence now records a clean source checkpoint; retained two failed keyboard rounds and corrected both direct and board evidence focus return. Independent reviewer owns its separate report.
