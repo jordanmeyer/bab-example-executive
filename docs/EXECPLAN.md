@@ -77,3 +77,18 @@ The new user instruction authorizes substantive changes; do not seek fabricated 
 Developer source checkpoint9a5625ec8b29cff068bdf127c04adc79f9ff9fc6 passed14/14 model cases and the recorded production scenarios, font/layout and returning-navigation checks. The failed footer-size and restored-dropdown rounds remain inEVALUATION.md. Native ledger removed an unnecessary table library and duplicate controls. Independent review, attribution of isolated unscoped browser-console errors, and publication remain pending. The review harness is local-only and a clean build removes its generated copy.
 
 Independent coordinator review passed at f98a15884acd2c080756650ca6a0d6fe45f706df after narrow layout, Back consistency, keyboard ledger/dialog and cleanup checks. Publication is the only remaining milestone; the source and evaluated plan remain unchanged.
+
+## Remaining-checklist correction plan — 2026-10-09
+
+The user authorized the revised126-item checklist. This bounded pass covers EXEC-01/02/04/05/06/11/12/13 plus applicable ALL items. Preserve existing default numbers, prior failed rounds and the public build story. No new package, backend, student approval or business model is needed.
+
+Implement app/model.js contribution-effect signs, app/app.jsx comparison-period key, threshold classification explanation, regional exact table, prediction-before-reveal briefing and a compact copyable analyst takeaway. Preserve keyboard focus across the complete briefing → detail → same briefing question round trip. Add the prediction/change/reconciliation/limitation walkthrough to BUILD-STORY.md using existing records. Update PLAN and evidence before evaluation.
+
+Acceptance: default September $1,441,000/$341,800/23.7%; raising target20→25 changes4→6 stores (Tidewater and Summit Park newly below) without changing financials. Harbor sales +$3,000, product effect −$1,266, labor effect −$7,995, other0 sum to −$6,261 contribution. Harbor+Meadow weighted margin20.0625% differs from average20.9487%; company headline341800/1441000. Three regional exact values are20.4/24.6/26.6%. Actual browser must complete all three chained dialogs at desktop/320, copy a scoped takeaway, recover invalid target, and inspect200% text. Tests address signed accounting reconciliation rather than UI wording. Current skills/AGENTS and original plans still apply.
+
+Actual novice and screen-reader task evidence are separate prerequisites; root is coordinating them. Do not mark ALL-11/16 verified using role/DOM checks or simulated students. An authored text-enlargement harness will be identified as such, not browser zoom or a device test. Ports9711test/9712production, clean source checkpoint before final checks, then independent root review before publication.
+
+- [x] Read revised common/EXEC checklist and current source; fetch clean main.
+- [ ] Implement bounded corrections and walkthrough; build/checkpoint.
+- [ ] Model/browser/320/200% text checks, separate simplification pass and per-ID evidence.
+- [ ] Independent review; actual novice/screen-reader evidence remains separately tracked.
