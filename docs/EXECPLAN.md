@@ -58,3 +58,16 @@ Independent inputs and derivations are in PLAN.md; exact simulated exchange is i
 Revision note: initialized after the complete first implementation; records observed preliminary checks and keeps final review pending.
 
 Revision note: final developer evidence now records a clean source checkpoint; retained two failed keyboard rounds and corrected both direct and board evidence focus return. Independent reviewer owns its separate report.
+
+
+## Live revision milestones — 2026-10-09
+
+First, update app/model.js and app/data.js with the authored same-store prior-year contribution inputs and weighted/missing-history comparison, and independently verify the $100/$300 weighted example. Second, replace the duplicated ledger in app/app.jsx with one semantic table, add board evidence and compact overview/ledger navigation, and copy canonical local fonts with license collection. Third, checkpoint the revised PLAN, source, tests, configuration and licenses, then evaluate the browser test page and production prefix at 1440/390/320. Independent review and coordinator publication follow only after developer evidence is ready.
+
+## Revision progress
+
+- [x] (2026-10-09) Inspect original brief, current plan and revised plugin/design guidance; fetch origin and confirm clean starting worktree.
+- [x] (2026-10-09) Implement direct board evidence, truthful trend scale/caption, annual margin and accessible ledger; remove redundant Tabulator dependency and watchlist.
+- [ ] Checkpoint and complete model/browser/production evaluation, independent review and publication.
+
+The new user instruction authorizes substantive changes; do not seek fabricated student agreement. PLAN.md documents the new prior-year history and explicit missing-history behavior. Existing numerical fixtures and prior failed evaluation rounds remain. Ports for this revision are test9711 and production9712. npm ci/build are repeatable; no services or new dependencies were added. Known expected values remain September sales $1,441,000/contribution $341,800/23.7% and four stores below20%. Revision tests must also show the new weighted prior-year margin and missing-history cases passing. Evidence must distinguish source, rendered output and independent approval. Final outcomes will be appended after checks.

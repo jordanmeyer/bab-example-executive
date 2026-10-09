@@ -1,7 +1,5 @@
 import {summarize,selectRows,status,costBridge,exactMoney} from '../app/model.js';
 import {records,months} from '../app/data.js';
-import {TabulatorFull} from 'tabulator-tables';
-import 'tabulator-tables/dist/css/tabulator.min.css';
 const cases=[];
 const test=(name,run)=>cases.push({name,run});
 const equal=(actual,expected)=>{if(actual!==expected)throw Error(`Expected ${expected}; observed ${actual}`);};
@@ -19,7 +17,8 @@ test('Scope intersection: Coast/S01/full period = 6; Coast/S12 = empty; Septembe
 test('Independent September ledger sum: sales $1,441,000; contribution $341,800; 4 stores below 20%',()=>{const rows=selectRows(records,{month:'2026-09'});const r=summarize(rows);equal(r.sales,144100000);equal(r.contribution,34180000);near(r.margin,341800/1441000);equal(rows.filter(row=>status(row,.2)==='Below target').length,4);});
 test('Dataset reference store preserves supplied independent Meadow House case',()=>{const r=summarize(selectRows(records,{storeId:'S12',month:'2026-09'}));equal(r.sales,10000000);equal(r.contribution,2500000);equal(r.ticket,2000);near(r.growth,1/9);});
 test('Harbor expense bridge: labor +$7,995 and +4.5 percentage points; contribution −$6,261',()=>{const current=records.find(r=>r.storeId==='S01'&&r.month==='2026-09');const prior=records.find(r=>r.storeId==='S01'&&r.month==='2026-08');const bridge=costBridge(current,prior);equal(bridge.find(r=>r.key==='labor').change,799500);near(bridge.find(r=>r.key==='labor').ratioChange,.045);equal(summarize([current]).contribution-summarize([prior]).contribution,-626100);});
-test('Tabulator plaintext cells render HTML-like text literally and sort local numeric values',()=>new Promise((resolve,reject)=>{const host=document.getElementById('fixture');const table=new TabulatorFull(host,{data:[{label:'<img src=x onerror=alert(1)>',value:10},{label:'safe',value:2}],columns:[{title:'Literal',field:'label',formatter:'plaintext'},{title:'Value',field:'value',sorter:'number'}]});table.on('tableBuilt',()=>{try{table.setSort('value','asc');equal(table.getData('active')[0].value,2);equal(host.querySelector('img'),null);equal(host.textContent.includes('<img src=x onerror=alert(1)>'),true);table.destroy();resolve();}catch(error){table.destroy();reject(error);}});}));
+test('Prior-year margin uses the same weighted base: $10 + $90 on $100 + $300 = 25%',()=>{near(summarize([{...fixture,priorSales:10000,priorContribution:1000},{...fixture,priorSales:30000,priorContribution:9000}]).priorMargin,.25);});
+test('Missing prior contribution suppresses the YoY margin comparison',()=>{equal(summarize([fixture]).priorMargin,null);equal(summarize([]).priorMargin,null);});
 let failures=0;
 for(const item of cases){const li=document.createElement('li');try{await item.run();li.className='pass';li.textContent=`PASS — ${item.name}`;}catch(error){failures++;li.className='fail';li.textContent=`FAIL — ${item.name}: ${error.message}`;}document.getElementById('results').append(li);}
 document.getElementById('summary').textContent=`${cases.length-failures}/${cases.length} passed; ${failures} failed.`;

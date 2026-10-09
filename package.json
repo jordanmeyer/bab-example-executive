@@ -18,7 +18,6 @@
     "@mantine/hooks": "9.7.1",
     "echarts": "6.1.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "tabulator-tables": "6.6.1"
+    "react-dom": "19.3.0"
   }
 }

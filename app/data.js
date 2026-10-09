@@ -17,8 +17,11 @@ export const stores = [
 ];
 export const records = stores.flatMap(store => months.map((month,i) => {
  const sales=store.sales[i]*100000;
+ const priorSales=store.id==='S12' && i===5 ? 9000000 : Math.round(sales/(1+(store.growth+(5-i)*60)/10000));
+ // Authored prior-year contribution rates, by store, on the same mature-store base.
+ const priorRate=[.25,.255,.231,.263,.285,.193,.252,.22,.272,.246,.254,.24][Number(store.id.slice(1))-1] + [0,.002,-.001,.004,.001,0][i];
  return { id:`${store.id}-${month}`,storeId:store.id,store:store.name,region:store.region,month,sales,
  product:Math.round(sales*store.product[i]/10000),labor:Math.round(sales*store.labor[i]/10000),other:store.other*100,
- priorSales:store.id==='S12' && i===5 ? 9000000 : Math.round(sales/(1+(store.growth+(5-i)*60)/10000)),
+ priorSales, priorContribution:Math.round(priorSales*priorRate),
  transactions:Math.round(sales/(store.ticket*100)),hours:store.hours[i] };
 }));
