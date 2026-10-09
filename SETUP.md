@@ -9,3 +9,7 @@ Production build: `npm run build`. Production preview: `npm run preview -- --por
 Browser automation uses a dedicated Codex in-app browser tab via cua_repl. The subagent interface rejects the optional visibility setting; creating a tab without that option succeeded. No user tab or browser-wide viewport is changed. Fixed-width test frames are used for responsive review. Initial wrong-order preview navigation failed because the server was not started; the correctly started preview loaded and rendered the module.
 
 Git is initialized locally on main with the authorized identity Jordan Meyer <jordanmeyer@protonmail.com>; public attribution was disclosed to the coordinator before committing. Publication remains the coordinator's responsibility.
+
+## October 9 live revision
+
+Test server9711 session8360; production9712 session87377. Commands: npm run test:browser -- --port9711 and npm run preview -- --port9712 (separate arguments with a space after --port). Local production harness /bab-example-executive/review.html is copied from tests/review.html after replacing its iframe /app/ source with /bab-example-executive/; this copy lives only in ignored dist and must not be deployed. Rebuilding clears it. Source tests at /tests/. Keep these servers running for independent review.

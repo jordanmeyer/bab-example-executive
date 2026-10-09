@@ -71,3 +71,7 @@ First, update app/model.js and app/data.js with the authored same-store prior-ye
 - [ ] Checkpoint and complete model/browser/production evaluation, independent review and publication.
 
 The new user instruction authorizes substantive changes; do not seek fabricated student agreement. PLAN.md documents the new prior-year history and explicit missing-history behavior. Existing numerical fixtures and prior failed evaluation rounds remain. Ports for this revision are test9711 and production9712. npm ci/build are repeatable; no services or new dependencies were added. Known expected values remain September sales $1,441,000/contribution $341,800/23.7% and four stores below20%. Revision tests must also show the new weighted prior-year margin and missing-history cases passing. Evidence must distinguish source, rendered output and independent approval. Final outcomes will be appended after checks.
+
+## Revision outcomes
+
+Developer source checkpoint9a5625ec8b29cff068bdf127c04adc79f9ff9fc6 passed14/14 model cases and the recorded production scenarios, font/layout and returning-navigation checks. The failed footer-size and restored-dropdown rounds remain inEVALUATION.md. Native ledger removed an unnecessary table library and duplicate controls. Independent review, attribution of isolated unscoped browser-console errors, and publication remain pending. The review harness is local-only and a clean build removes its generated copy.
