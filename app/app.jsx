@@ -24,7 +24,7 @@ function Chart({option,label,onClick}) {
  const host=useRef();
  useEffect(()=>{
   const chart=echarts.init(host.current,echartsTheme(),{renderer:'svg'});
-  chart.setOption({...option,animation:false,aria:{enabled:true},tooltip:{trigger:'axis',renderMode:'richText'}});
+  chart.setOption({...option,animation:false,aria:{enabled:true,label:{description:label}},tooltip:{trigger:'axis',renderMode:'richText'}});
   if(onClick) chart.on('click',onClick);
   const resize=new ResizeObserver(()=>chart.resize());resize.observe(host.current);
   return ()=>{resize.disconnect();chart.dispose();};
