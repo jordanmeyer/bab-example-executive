@@ -65,3 +65,20 @@ Console limitation: CUA retained isolated `MutationObserver.observe` errors with
 The coordinating agent independently reviewed this developer's committed output on October 9, 2026. Observed: 14/14 model suite; default $1,441,000 / $341,800; Meadow House $25,000 contribution / 25% margin; indexed labor evidence and August/September table in the board briefing; Market Square cost evidence; native ledger Enter opens details and Escape restores focus. The production 320px harness measured 319px client and scroll widths, actual local fonts loaded, no external initial resources and no small visible targets. The narrow briefing chart and table were readable, with intentional local table scrolling. Back after Coast reset both controls and results to All regions / $1,441,000 / $341,800 before interaction.
 
 Reviewer-requested cleanup removed obsolete Tabulator, agenda and regional-button CSS; no unused adapter/import remains. Prior-year sales comparison now uses whole USD, and singular store/record copy is corrected. The reviewer accepted these fixes and issued PASS at f98a158. This is independent approval for publication; it is not yet a live deployment. No source changes follow this checkpoint, only these reports.
+
+## Remaining-checklist corrections — source 2116c4b31047dcfdb52ac8f3e8c5f2446a9b24bd — browser review pending
+
+Clean install, approved-dependency check and production build passed. This checkpoint addresses the revised126-item checklist rather than the previous live-revision review. BUILD-STORY contains a bounded authored student task and exact answers; it is not an actual novice observation. The suite contains14 cases, with current browser execution pending. CUA returned no available browsers in the implementation agent; parent review has the actual test/production URLs on9711/9712. The authored320/200%text harness is available at the production/review.html; font enlargement is not native browser zoom. Actual screen-reader and novice walkthroughs remain open, and no readiness claim is made. Source/PLAN paths are committed; generated dist/node_modules stay ignored. No publication has occurred for this correction round.
+
+## Independent source/model review — PASS at 2116c4b31047dcfdb52ac8f3e8c5f2446a9b24bd
+
+Reviewer: collaborating agent `/root/live_revision_operations`, October 9, 2026. The independent agent read full app/model/data/BUILD-STORY. Independent arithmetic confirmed September $1,441,000 sales / $341,800 contribution, target 20→25 changes the count 4→6, Harbor+Meadow weighted margin 20.0625% versus simple average 20.9487%, regional margins 20.3546% / 24.5813% / 26.6474%, and the signed contribution bridge. No actionable source blocker was found.
+
+This is source/model approval only. Actual production interaction, keyboard, imports/downloads, 320px and 200% text checks remain separate root-owned observations. Actual screen-reader and novice sessions remain open; none is inferred from this review.
+
+
+## Checklist production review — FAIL at 2116c4b31047dcfdb52ac8f3e8c5f2446a9b24bd
+
+The coordinator's actual production review found occupancy's unchanged signed effect rendered as +-$0. It also reproduced EXEC-12: Open board briefing → Open full cost detail → Escape on Close store details closed both the store detail and the restored briefing, leaving focus on Open board briefing with no Next question. The reviewer paused for source inspection before Escape, so this is not attributed to an over-fast automation sequence. The existing browser suite passed14/14 before these findings; numerical test success did not establish correct modal behavior.
+
+Source repair uses direct previous−current cost subtraction for positive zero and the pinned Mantine Modal.Stack's shared handled-Escape ownership. A zero-format assertion extends the existing bridge case. All three chained modal paths, direct ledger return, affected cost display and the amended suite require actual review at the next checkpoint. This failed round remains retained. No source or browser PASS is claimed by the repair itself.

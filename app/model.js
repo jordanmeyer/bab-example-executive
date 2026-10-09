@@ -17,5 +17,5 @@ export function status(row,target) {
  return value.margin===null ? 'No sales' : value.margin<target ? 'Below target' : 'At / above target';
 }
 export function costBridge(current,previous) {
- return ['sales','product','labor','other'].map(key=>({key,current:current[key],previous:previous[key],change:current[key]-previous[key],effect:(key==='sales'?1:-1)*(current[key]-previous[key]),ratioChange:current.sales&&previous.sales?current[key]/current.sales-previous[key]/previous.sales:null}));
+ return ['sales','product','labor','other'].map(key=>({key,current:current[key],previous:previous[key],change:current[key]-previous[key],effect:key==='sales'?current[key]-previous[key]:previous[key]-current[key],ratioChange:current.sales&&previous.sales?current[key]/current.sales-previous[key]/previous.sales:null}));
 }
