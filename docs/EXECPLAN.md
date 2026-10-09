@@ -75,3 +75,5 @@ The new user instruction authorizes substantive changes; do not seek fabricated 
 ## Revision outcomes
 
 Developer source checkpoint9a5625ec8b29cff068bdf127c04adc79f9ff9fc6 passed14/14 model cases and the recorded production scenarios, font/layout and returning-navigation checks. The failed footer-size and restored-dropdown rounds remain inEVALUATION.md. Native ledger removed an unnecessary table library and duplicate controls. Independent review, attribution of isolated unscoped browser-console errors, and publication remain pending. The review harness is local-only and a clean build removes its generated copy.
+
+Independent coordinator review passed at f98a15884acd2c080756650ca6a0d6fe45f706df after narrow layout, Back consistency, keyboard ledger/dialog and cleanup checks. Publication is the only remaining milestone; the source and evaluated plan remain unchanged.
